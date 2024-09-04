@@ -37,7 +37,7 @@ $(".btn").click(function(event){
 
 
 function playSound(name){
-    var audio = new Audio("./sounds/"+name+".mp3");
+    var audio = new Audio("./"+name+".mp3");
     audio.play();
 }
 
@@ -61,7 +61,7 @@ function checkAnswer(currentLevel){
   
     else{
         console.log("fail");
-        var audio = new Audio("./sounds/wrong.mp3");
+        var audio = new Audio("./wrong.mp3");
         audio.play();
         $("body").addClass("game-over");
         setTimeout(function(){
